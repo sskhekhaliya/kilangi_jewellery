@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KILANGI | Timeless Jewelry</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar bg-green">
+      <span class="announcement-text txt-sm"
+        >Step into Sparkle – Pure Gold &amp; Silver Await</span
+      >
+      <div class="announcement-icons">
+        <i class="ph ph-instagram-logo"></i>
+        <i class="ph ph-facebook-logo"></i>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <!-- Mobile Menu Button -->
+      <div class="mobile-controls mobile-only">
+        <button id="mobile-menu-btn">
+          <i class="ph ph-list"></i>
+        </button>
+      </div>
+
+      <!-- Desktop Search Bar -->
+      <div class="header-left">
+        <div class="search-wrapper desktop-only">
+          <input type="text" placeholder="Search for Earrings..." />
+          <i class="ph ph-magnifying-glass"></i>
+        </div>
+      </div>
+
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="KILANGI Logo" />
+        </a>
+      </div>
+
+      <!-- Header Right Icons -->
+      <div class="header-right">
+        <button class="nav-icon">
+          <i class="ph ph-heart icon-md"></i>
+        </button>
+        <button class="nav-icon">
+          <i class="ph ph-user icon-md desktop-only"></i>
+        </button>
+        <button class="cart-icon-wrapper">
+          <i class="ph ph-shopping-bag icon-md"></i>
+          <span class="cart-badge">2</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Navbar (Desktop) -->
+    <nav class="navbar bg-sand desktop-only">
+      <div class="container">
+        <div class="nav-links txt-sm">
+          <a href="#">All Jewellery</a>
+          <a href="#">Gold</a>
+          <a href="#">Silver</a>
+          <a href="#">Gifting</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Search bar (Visible on Mobile) -->
+    <div class="mobile-search-bar bg-sand mobile-only">
+      <div class="search-wrapper">
+        <input type="text" placeholder="Search for Earrings..." />
+        <i class="ph ph-magnifying-glass"></i>
+      </div>
+    </div>
+
+    <!-- Mobile Quick Search tabs-->
+    <div class="mobile-quick-search tabs-container mobile-only">
+      <button class="tab-btn active" data-target="bestseller">
+        <img
+          src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=200&auto=format&fit=crop"
+          alt="Best Seller"
+          class="tab-icon"
+        />
+        Best Seller
+      </button>
+
+      <button class="tab-btn" data-target="rings">
+        <img
+          src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?q=80&w=200&auto=format&fit=crop"
+          alt="Rings"
+          class="tab-icon"
+        />
+        Rings
+      </button>
+
+      <button class="tab-btn" data-target="earrings">
+        <img
+          src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=200&auto=format&fit=crop"
+          alt="Earrings"
+          class="tab-icon"
+        />
+        Earrings
+      </button>
+
+      <button class="tab-btn" data-target="pendants">
+        <img
+          src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=200&auto=format&fit=crop"
+          alt="Pendants"
+          class="tab-icon"
+        />
+        Pendants
+      </button>
+
+      <button class="tab-btn" data-target="bracelets">
+        <img
+          src="https://images.unsplash.com/photo-1576053139778-7e32f2ae3cfd?q=80&w=200&auto=format&fit=crop"
+          alt="Bracelets"
+          class="tab-icon"
+        />
+        Bracelets
+      </button>
+    </div>
+
+    <section class="hero-section media-card">
+      <img src="./images/hero-image-1.jpg" alt="KILANGI | Timeless Jewelry" />
+      <img src="./images/hero-image-2.jpg" alt="KILANGI | Timeless Jewelry" />
+      <div class="media-card-content fade-in pl-5">
+        <h1 class="media-card-title txt-lg">
+          Because You Deserve to Feel
+          <span class="italic text-gold">Timeless.</span>
+        </h1>
+        <p class="media-card-desc txt-sm">
+          Each piece is thoughtfully designed to celebrate your individuality —
+          blending modern elegance with lasting craftsmanship.
+        </p>
+        <button class="btn-link">
+          Explore the Elegance <i class="ph ph-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Features Bar -->
+    <section class="features-section">
+      <span class="txt-md fw-600">Anti-Fade Polish</span>
+      <img src="./images/icons/divider.svg" alt="Divider" />
+      <span class="txt-md fw-600">Timeless Design</span>
+      <img src="./images/icons/divider.svg" alt="Divider" />
+      <span class="txt-md fw-600">Lightweight Comfort</span>
+      <img src="./images/icons/divider.svg" alt="Divider" />
+      <span class="txt-md fw-600">Modern Minimal</span>
+    </section>
+
+    <!-- Bestseller Section -->
+    <section class="bestseller-section mx-2">
+      <h2 class="section-title">
+        Explore Our
+        <span class="italic text-gold">Timeless Bestsellers</span>
+      </h2>
+      <div class="tabs-container pb-2">
+        <button class="tab-btn active txt-sm" data-target="rings">Rings</button>
+        <button class="tab-btn txt-sm" data-target="earrings">Earrings</button>
+        <button class="tab-btn txt-sm" data-target="pendants">Pendants</button>
+        <button class="tab-btn txt-sm" data-target="bracelets">
+          Bracelets
+        </button>
+      </div>
+
+      <div class="products-grid gap-1" id="bestseller-product-grid">
+        <!-- Javascript will populate this -->
+      </div>
+      <div class="view-all-wrapper pt-3 pb-2 txt-center">
+        <a href="#" class="btn-green"
+          >Shop All Bestsellers <i class="ph ph-arrow-right"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- Recently View Section-->
+    <section class="recently-view-section bg-sand py-3 px-2">
+      <h2 class="section-title pb-2">Recently Viewed</h2>
+
+      <div class="products-grid gap-1" id="recently-viewed-product-grid">
+        <!-- Javascript will populate this -->
+      </div>
+    </section>
+
+    <!-- Extra Special Section -->
+    <section class="extra-special-section pt-3 pb-2">
+      <div class="flex justify-center pb-2">
+        <h2 class="section-title text-center mx-width-660">
+          Make it <span class="italic text-gold">Extra Special</span> with
+          Personalised Gift Notes
+        </h2>
+      </div>
+
+      <div class="gift-card-grid px-2">
+        <!-- BIG MERGED IMAGE (A1 + A2 + B1 + B2) -->
+        <div class="gift-grid-item grid-item--big">
+          <img
+            src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=1400&auto=format&fit=crop"
+            alt="Featured Jewellery"
+          />
+        </div>
+
+        <!-- SMALL ITEMS -->
+        <div class="gift-grid-item">
+          <img
+            src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?q=80&w=600&auto=format&fit=crop"
+            alt="Item 1"
+          />
+          <button class="btn-outline">Shop Under ₹10000</button>
+        </div>
+
+        <div class="gift-grid-item">
+          <img
+            src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=600&auto=format&fit=crop"
+            alt="Item 2"
+          />
+          <button class="btn-outline">Shop Under ₹20000</button>
+        </div>
+
+        <div class="gift-grid-item">
+          <img
+            src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=600&auto=format&fit=crop"
+            alt="Item 3"
+          />
+          <button class="btn-outline">Shop Under ₹30000</button>
+        </div>
+
+        <div class="gift-grid-item">
+          <img
+            src="https://images.unsplash.com/photo-1576053139778-7e32f2ae3cfd?q=80&w=600&auto=format&fit=crop"
+            alt="Item 4"
+          />
+          <button class="btn-outline">E-Gift Cards</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlight Section -->
+    <section class="highlight-section grid mb-2">
+      <!-- Hero 1 -->
+      <div class="media-card">
+        <img
+          src="https://s3-ap-southeast-2.amazonaws.com/assets1.brilliyond.com.au/images/winter-jewellery-ideas.png"
+          alt="Winter Love"
+        />
+        <div class="media-card-overlay"></div>
+        <div class="media-card-content fade-in pl-2">
+          <h1 class="media-card-title txt-lg">
+            Winter <span class="italic text-gold">Love</span> Has Arrived..
+          </h1>
+          <button class="btn-link btn-sm">
+            Explore Collection &nbsp;<i class="ph ph-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Hero 2 -->
+      <div class="media-card">
+        <img
+          src="https://charlieandcojewelry.com/cdn/shop/articles/Gold_vs._Silver_Jewelry.webp?v=1712645391&width=2048"
+          alt="Lab Grrown Silver & Gold"
+        />
+        <div class="media-card-overlay"></div>
+        <div class="media-card-content fade-in pl-2">
+          <h1 class="media-card-title txt-lg">
+            Introducing <span class="italic text-gold">Lab Grown</span> Silver &
+            Gold
+          </h1>
+          <button class="btn-link btn-sm">
+            Discover More &nbsp;<i class="ph ph-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Hero 3 -->
+      <div class="media-card">
+        <img
+          src="https://fashionweekonline.com/wp-content/uploads/2022/05/Useful-Tips-on-Choosing-the-Jewelry-Like-a-Professional-Model-Featured.jpg"
+          alt="Jewelry Model"
+        />
+        <div class="media-card-overlay"></div>
+        <div class="media-card-content fade-in pl-2">
+          <h1 class="media-card-title txt-lg">
+            Crafted for <span class="italic text-gold">Everyday</span> Elegance
+          </h1>
+          <button class="btn-link btn-sm">
+            Shop Essentials &nbsp;<i class="ph ph-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--Collection section-->
+    <section class="collection-section py-3 px-2">
+      <h2 class="section-title pb-2 text-center">
+        Explore Our <span class="italic text-gold">Collection</span>
+      </h2>
+
+      <div class="products-grid" id="collection-grid">
+        <!-- Javascript will populate this -->
+      </div>
+    </section>
+
+    <!-- Celebrate Section-->
+    <section class="celebrate-section bg-sand py-3 px-2">
+      <div class="flex justify-center flex-column pb-2 align-center">
+        <h2 class="section-title text-center mx-width-660">
+          Gifts That <span class="italic text-gold">Celebrate</span> Every
+          Moment
+        </h2>
+        <p class="txt-sm txt-center mb-2 mx-width-660">
+          From birthdays to anniversaries, our curated gift collection is
+          designed to make every occasion unforgettable. Find the perfect piece
+          that speaks from the heart.
+        </p>
+      </div>
+
+      <div class="products-grid gap-1">
+        <!-- Birthday -->
+        <div class="product-card">
+          <div class="product-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80"
+              alt="Birthday Jewellery"
+            />
+          </div>
+
+          <h3 class="product-title">Birthday</h3>
+
+          <p class="p-desc txt-dark mb-1">
+            Celebrate their special day with a timeless piece that shines as
+            bright as they do.
+          </p>
+
+          <button class="btn-green mt-4">
+            Shop Birthday Gifts <i class="ph ph-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Anniversary -->
+        <div class="product-card">
+          <div class="product-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80"
+              alt="Anniversary Jewellery"
+            />
+          </div>
+
+          <h3 class="product-title">Anniversary</h3>
+
+          <p class="p-desc txt-dark mb-1">
+            Mark years of togetherness with elegant jewellery crafted to
+            symbolize everlasting love.
+          </p>
+
+          <button class="btn-green mt-4">
+            Shop Anniversary Gifts <i class="ph ph-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Engagement -->
+        <div class="product-card">
+          <div class="product-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=1200&auto=format&fit=crop"
+              alt="Engagement Jewellery"
+            />
+          </div>
+
+          <h3 class="product-title">Engagement</h3>
+
+          <p class="p-desc txt-dark mb-1">
+            Begin your forever with exquisite designs that capture the promise
+            of a beautiful future.
+          </p>
+
+          <button class="btn-green mt-4">
+            Shop Engagement Gifts <i class="ph ph-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="view-all-wrapper pt-3 pb-2 txt-center">
+        <a href="#" class="btn-green"
+          >Explore More Collection <i class="ph ph-arrow-right"></i
+        ></a>
+      </div>
+    </section>
+
+    <section class="out-ethos flex">
+      <div class="container">
+        <img src="./images/hero-image-1.jpg" alt="Jewellery" />
+      </div>
+      <div class="container text-left flex">
+        <h1 class="subtitle">Our Ethos</h1>
+        <h1 class="txt-xlg text-serif">Every Shape.<br />Every Sparkle.</h1>
+        <br />
+        <p class="p-desc mb-2">
+          Every piece we create is a blend of artistry and awareness handcrafted
+          with precision, guided by purpose. <br /><br />
+          From ethically sourced materials to sustainable processes, we believe
+          true beauty shines brightest when it s made responsibly.
+        </p>
+        <button class="btn-green mt-2">
+          Discover Our Ethos &nbsp;<i class="ph ph-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <section class="bg-sand py-3 diamond-section">
+      <div>
+        <div
+          class="flex gap-1 align-center feature-flex"
+          style="flex-wrap: wrap; max-width: 1200px"
+        >
+          <!-- LEFT : IMAGE -->
+          <div
+            class="flex justify-center align-center img-box-container"
+            style="flex: 1; min-width: 300px"
+          >
+            <img
+              src="./images/Clip path group.png"
+              alt="Diamonds and Tweezers"
+              style="max-width: 500px; mix-blend-mode: multiply"
+              class="img-let-img"
+            />
+          </div>
+
+          <!-- RIGHT : CONTENT -->
+          <div class="flex flex-column" style="flex: 1; min-width: 300px">
+            <h2 class="section-title mb-1">
+              Not Just A Trend. It’s The
+              <span class="italic text-gold">Future.</span>
+            </h2>
+
+            <p class="p-desc mb-2" style="max-width: 90%">
+              Our lab-grown gold and silver jewellery is crafted with the same
+              brilliance and purity as mined metals without the compromise.
+            </p>
+
+            <!-- FEATURES GRID -->
+            <div
+              class="grid gap-1"
+              style="grid-template-columns: repeat(3, 1fr); text-align: center"
+            >
+              <div class="flex flex-column align-center gap-1">
+                <svg
+                  class="icon-sm"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#214b48"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+                <p class="txt-sm fw-600">925 Sterling Silver</p>
+              </div>
+
+              <div class="flex flex-column align-center gap-1">
+                <svg
+                  class="icon-sm"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#214b48"
+                  stroke-width="2"
+                >
+                  <path d="M6 3h12l4 6-10 12L2 9z" />
+                  <path d="M9 10l2 2 4-4" />
+                </svg>
+                <p class="txt-sm fw-600">Certified Diamonds</p>
+              </div>
+
+              <div class="flex flex-column align-center gap-1">
+                <svg
+                  class="icon-sm"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#214b48"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M2 12h20" />
+                </svg>
+                <p class="txt-sm fw-600">Ethical Sourcing</p>
+              </div>
+
+              <div class="flex flex-column align-center gap-1">
+                <svg
+                  class="icon-sm"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#214b48"
+                  stroke-width="2"
+                >
+                  <path d="M21 16V8l-9-5-9 5v8l9 5z" />
+                </svg>
+                <p class="txt-sm fw-600">Free 15 Days<br />Return & Exchange</p>
+              </div>
+
+              <div class="flex flex-column align-center gap-1">
+                <svg
+                  class="icon-sm"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#214b48"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="14" r="7" />
+                </svg>
+                <p class="txt-sm fw-600">Customisable<br />Designs</p>
+              </div>
+
+              <div class="flex flex-column align-center gap-1">
+                <svg
+                  class="icon-sm"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#214b48"
+                  stroke-width="2"
+                >
+                  <path d="M4 20h16L12 4z" />
+                </svg>
+                <p class="txt-sm fw-600">BIS Hallmark</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review Section -->
+    <section class="review-section py-3 px-2">
+      <div class="flex justify-center flex-column pb-2 align-center">
+        <h2 class="section-title text-center mx-width-660">
+          Voices of Our <span class="italic text-gold"> Happy Customer</span>
+        </h2>
+        <p class="txt-sm txt-center mb-2 mx-width-660">
+          Every piece we create carries a story but nothing shines brighter than
+          the words of those who wear them.
+        </p>
+      </div>
+
+      <div class="products-grid gap-1 reviews-grid" id="review-grid">
+        <!-- Javascript will populate this -->
+      </div>
+    </section>
+
+    <footer class="bg-green">
+      <div class="container">
+        <div class="footer-grid py-3">
+          <!-- Brand Column -->
+          <div class="footer-brand footer-area-brand">
+            <img
+              src="./images/logo-white.png"
+              alt="Kilangi"
+              class="footer-logo"
+            />
+
+            <p class="txt-light mb-1">
+              Kilangi Jewellery is a premium brand specializing in exquisite
+              silver and gold jewellery.
+            </p>
+
+            <p class="txt-light">
+              Known for its timeless elegance and fine craftsmanship, Kilangi
+              offers a curated collection of traditional and contemporary
+              designs perfect for every occasion.
+            </p>
+          </div>
+
+          <!-- Our Collection -->
+          <div class="footer-col footer-area-collection">
+            <h4 class="footer-title">Our Collection</h4>
+            <ul class="footer-links">
+              <li><a href="#">Rings</a></li>
+              <li><a href="#">Earrings</a></li>
+              <li><a href="#">Pendants</a></li>
+              <li><a href="#">Bracelets</a></li>
+              <li><a href="#">Necklaces</a></li>
+              <li><a href="#">Bangles</a></li>
+              <li><a href="#">Accessories</a></li>
+            </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-col footer-area-links">
+            <h4 class="footer-title">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#">All Jewellery</a></li>
+              <li><a href="#">Gold</a></li>
+              <li><a href="#">Silver</a></li>
+              <li><a href="#">Gifting</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Policies -->
+          <div class="footer-col footer-area-policies">
+            <h4 class="footer-title">Policies</h4>
+            <ul class="footer-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Shipping Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">FAQ’s Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom txt-center">© 2025 / Kilangi</div>
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+  </body>
+</html>
